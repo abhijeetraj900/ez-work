@@ -27,7 +27,7 @@ export default function Home() {
     }
 
     try {
-      const response = await axios.post("http://3.228.97.110:9000/api", { email });
+      const response = await axios.post("https://test.ezworks.ai/api", { email });
 
       if (response.status === 200) {
         setMessage("✅ Form Submitted Successfully!");
